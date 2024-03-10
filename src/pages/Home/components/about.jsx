@@ -19,7 +19,7 @@ export const About = () => {
     }, [])
     return (
         <div className='py-10 relative'>
-            <img src={cactus} alt="" className='absolute w-[5%]'/>
+            <img src={cactus} alt="" className='absolute w-[5%] max-[430px]:w-[15%]'/>
             <h1 className='text-6xl text-center head'>Skills</h1>
             <div className='flex gap-5 justify-center items-center py-10'>
                     <div  className=' w-[80%]  py-4 flex flex-wrap justify-center gap-4'>
