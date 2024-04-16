@@ -1,9 +1,9 @@
 import './firstSection.sass'
 import React, { useState } from 'react';
-import adidas from "../../../assets/img/e-commerce.png"
+import adidas from "../../../assets/img/adidasstore.png"
 import movies from "../../../assets/img/movie.png"
 import resto from "../../../assets/img/lionsresto.png"
-import currency from "../../../assets/img/currency.png"
+import quranApp from "../../../assets/img/quran_project.png"
 import { Link, useNavigate } from 'react-router-dom';
 
 
@@ -16,6 +16,13 @@ export const Projects = () => {
             description: "Experience top-tier sportswear shopping with my React.js project. Seamlessly blending style and performance, this platform ensures a dynamic and responsive user journey. Join me in exploring the intersection of technology and athletic fashion.",
             sourceCode: "https://github.com/oufkirhamza/oufkir_hamza_react_projet_final",
             live: "#"
+        },
+        {
+            picture: quranApp,
+            title: "QuranApp",
+            description: "Immerse yourself in the divine words of the Quran with my comprehensive app. Read and listen to the Quran anytime, anywhere, with ease. Let this app be your faithful companion on your spiritual journey.",
+            sourceCode: "https://github.com/oufkirhamza/quran_app",
+            live: "https://quranapp-ho.vercel.app/"
         },
         {
             picture: movies,
@@ -31,13 +38,6 @@ export const Projects = () => {
             sourceCode: "https://github.com/oufkirhamza/projet_final_DOM_OUFKIR_Hamza",
             live: "#"
         },
-        {
-            picture: currency,
-            title: "Coin Market.",
-            description: "Experience top-tier sportswear shopping with my React.js project. Seamlessly blending style and performance, this platform ensures a dynamic and responsive user journey. Join me in exploring the intersection of technology and athletic fashion.",
-            sourceCode: "https://github.com/oufkirhamza/oufkir_hamza_react_projet_final",
-            live: "https://coinmarketcap.com/"
-        },
     ])
 
     return (
@@ -52,8 +52,8 @@ export const Projects = () => {
                                 <div className="card__content max-[430px]:hidden flex flex-col gap-6  ">
                                     <p className="card__title">{project.title}</p>
                                     <p className="card__description">{project.description}</p>
-                                    <div>
-                                        <Link to={project.live} className="card__button hover:bg-text hover:text-background ">Live Demo</Link>
+                                    <div className='max-[430px]:hidden'>
+                                        <Link to={project.live} target='_blank' className="card__button hover:bg-text hover:text-background ">Live Demo</Link>
                                         <Link to={project.sourceCode} className="card__button secondary w-fit ">Source Code</Link>
                                     </div>
                                 </div>
