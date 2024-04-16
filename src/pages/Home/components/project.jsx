@@ -12,10 +12,10 @@ export const Projects = () => {
     const [projects, setProjects] = useState([
         {
             picture: adidas,
-            title: "Fashe.",
+            title: "adidasstore",
             description: "Experience top-tier sportswear shopping with my React.js project. Seamlessly blending style and performance, this platform ensures a dynamic and responsive user journey. Join me in exploring the intersection of technology and athletic fashion.",
-            sourceCode: "https://github.com/oufkirhamza/oufkir_hamza_react_projet_final",
-            live: "#"
+            sourceCode: "https://github.com/oufkirhamza/adidasstore",
+            live: "https://adidasstore.vercel.app/"
         },
         {
             picture: quranApp,
