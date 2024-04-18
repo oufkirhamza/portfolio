@@ -8,7 +8,7 @@ export const Header = () => {
 
     return (
         <>
-            <Navbar fluid className='w-[100%] text-text bg-transparent'>
+            <Navbar fluid className='w-[100%] text-text bg-transparent max-[430px]:fixed max-[430px]:top-0 max-[430px]:bg-background max-[430px]:z-50'>
                 <Navbar.Brand >
                     {/* <img src={logo} className="mr-3 h-6 sm:h-9" alt="logo" /> */}
                     <h1 className='font-bold head text-2xl'>HAMZA</h1>
